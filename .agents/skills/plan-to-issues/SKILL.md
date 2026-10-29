@@ -24,6 +24,20 @@ in a shell this agent can run.
 
 6. Record every issue URL from gh's output (not from memory) and reply with the list.
 
+## What every issue here carries
+
+Agreed with the human for plan morning-digest (2026-10-29). Use it for every plan unless they
+change it.
+
+- First line: `Source: plan.md § <n>` (the plan's own section number, e.g. `§ 2a`).
+- Label: `plan:<plan name from the frontmatter>`, e.g. `plan:morning-digest`. Create it first if
+  it doesn't exist.
+- Sections, in this order: **Scope**, **Done when** (copied from the plan), **Blocked by** (real
+  issue numbers; say when only part of an issue is needed, e.g. `#1 (types.ts only)`),
+  **Suggested worker** (model · effort, per AGENTS.md).
+- An issue whose "Done when" depends on a person (a review, a reply) stays open until that person
+  has acted, even if the plan's wording reads as done earlier. The step after it is blocked by it.
+
 Closing one, with the closing comment from AGENTS.md:
 
 ```sh
